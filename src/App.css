@@ -1,38 +1,110 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 .App {
-  text-align: center;
+  width: vw100;
+  height: vh100;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: aqua;
+  margin: 0px;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  margin: 0px;
+  margin-left: 50px;
+  padding: 0px;
+  padding-top: 27px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardComp {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  padding: 0px 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  display: flex;
+  background-color: white;
+  width: 80%;
+  flex-direction: row;
+  position:relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter {
+  top: 0; 
+  right: 15px; 
+  bottom: 0;
+  position:absolute;
+  
+}
+
+.info {
+  text-align: left;
+  padding-left: 75px;
+}
+
+span {
+  font-weight: bold;
+}
+
+ol {
+  margin-top: 0;
+}
+
+.bubble {
+  margin-bottom: 20px;
+}
+
+.nav {
+  margin-top: 10px;
+  position: relative;
+  width: 80%;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+}
+
+button {
+  align-items: normal;
+  background-color: rgba(0,0,0,0);
+  border-color: rgb(0, 0, 238);
+  border-style: none;
+  box-sizing: content-box;
+  color: rgb(255, 255, 255); 
+  cursor: pointer;
+  display: inline;
+  font: inherit;
+  height: auto;
+  padding: 0;
+  perspective-origin: 0 0;
+  text-align: start;
+  transform-origin: 0 0;
+  width: auto;
+  -moz-appearance: none;
+  -webkit-logical-height: 1em;
+  -webkit-logical-width: auto;
+  font-weight: bold;
+  font-size: 20px;
 }
